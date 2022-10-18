@@ -1,10 +1,9 @@
-import pandas as pd
 import dash
-import dash_html_components as html
 import dash_core_components as dcc
-from dash.dependencies import Input, Output
+import dash_html_components as html
+import pandas as pd
 import plotly.express as px
-
+from dash.dependencies import Input, Output
 
 spacex_df = pd.read_csv("spacex_launch_dash.csv")
 max_payload = spacex_df['Payload Mass (kg)'].max()
